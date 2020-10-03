@@ -1,5 +1,7 @@
 <script>
+
 export default {
+  
   created () {
     // 调用API从本地缓存中获取数据
     /*
@@ -9,7 +11,6 @@ export default {
      * 百度：mpvue === swan, mpvuePlatform === 'swan'
      * 支付宝(蚂蚁)：mpvue === my, mpvuePlatform === 'my'
      */
-
     let logs
     if (mpvuePlatform === 'my') {
       logs = mpvue.getStorageSync({key: 'logs'}).data || []
