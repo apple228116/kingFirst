@@ -1,41 +1,26 @@
-<!--  -->
 <template>
-<div>
-    <div>apple</div>
-    <button open-type="getUserInfo" @getuserinfo="getUserData">获取用户信息</button>
-    <p>{{name}}</p>
-    <p>pear</p>
-</div>
+  <div class="container">
+      <h1>{{name|'caiji'}}</h1>
+      <h1>{{a|'caiji'}}</h1>
+  </div>
 </template>
 
 <script>
-// import mapState from 'vuex'
+import {mapState} from 'vuex'
 export default {
- data() {
-  return {
-   name: 'aaa'
-  }
- },
- methods(){
-    getUserData:(e)=>{
-        console.log(e)
+  
+  computed:mapState({
+      a: 'a'
+  }),
+  data() {
+    return {
+
     }
- },
- created() {
-  wx.getUserInfo({
-      success(e){
-          console.log(e)
-      }
-  })
-    //   this.name = this.$store.state.name
-    this.name = this.$store.state.name
- },
- mounted() {
-  console.log(this)
- }
+  }
+  
 }
 </script>
+
 <style scoped>
-/* @import url(); 引入css类 */
 
 </style>
