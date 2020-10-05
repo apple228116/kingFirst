@@ -1,3 +1,4 @@
 export default {
-    name: 'me'
+    name: 'me',
+    stater:['apple','pear']
 }
