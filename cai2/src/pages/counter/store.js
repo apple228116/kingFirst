@@ -3,22 +3,15 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+import mutations from './mutations'
+
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    count: 0
+    ji: ['chiken','鸡']
   },
-  mutations: {
-    increment: (state) => {
-      const obj = state
-      obj.count += 1
-    },
-    decrement: (state) => {
-      const obj = state
-      obj.count -= 1
-    }
-  }
+  mutations
 })
 
 export default store
