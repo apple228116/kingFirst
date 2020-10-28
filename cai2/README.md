@@ -1,1 +1,3 @@
 # 如果出现_init的错误，就删掉dist然后再npm start 运行一遍就好了
+
+letter-spacing和word-spacing这两个属性都用来添加他们bai对应的元素中的空白du。zhiletter-spacing添加字母之间的空白，而word-spacing添加每个单词之间的空白。请大家注意，word-spacing对中文无效。
