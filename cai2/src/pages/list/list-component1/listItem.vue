@@ -14,6 +14,10 @@
 
         4）卢本伟牛逼
       </p>
+      <div class='end'>
+        <img src="/static/images/icon/chat.png" alt="" /><span>88</span>
+        <img src="/static/images/icon/view.png" alt="" /><span>66</span>
+      </div>
   </div>
 </template>
 
@@ -32,7 +36,9 @@ export default {
 
 <style scoped>
 .LItem{
-  background-color: #f40;
+  border-top: 6rpx solid green;
+  border-bottom: 6rpx solid yellow;
+  margin-bottom: 50rpx;
 }
 header{
   height: 100rpx;
@@ -47,5 +53,15 @@ header img{
 p{
   text-indent: 40rpx;
   letter-spacing: 10rpx;
+}
+.end img{
+  width: 40rpx;
+  height: 40rpx;
+}
+.end span{
+  font-size: 40rpx;
+  line-height: 40rpx;
+  height: 40rpx;
+  margin: 0 30rpx;
 }
 </style>

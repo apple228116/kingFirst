@@ -38,7 +38,7 @@ export default {
 
 <style>
 page{
-  background-color: skyblue;
+  background-color:rgba(255,69,0,.1);
 }
 swiper{
   margin-bottom: 50rpx;
